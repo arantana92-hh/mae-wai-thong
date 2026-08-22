@@ -4,29 +4,34 @@
 
 const FB_URL = 'https://www.facebook.com/share/1D57ZSNNBr/';
 
-// หน้าไหนที่ไม่ใช่ index.html ต้องอ้างอิงกลับไปที่ index.html#... แทน #... เฉยๆ
-function homePrefix() {
+// ใช้ path แบบ absolute (ขึ้นต้นด้วย /) เพื่อให้ลิงก์ถูกต้องไม่ว่าหน้าปัจจุบัน
+// จะอยู่ลึกแค่ไหน (root, /blog/, ฯลฯ)
+const HOME = '/index.html';
+function isHomePage() {
   const p = location.pathname;
-  const isHome = p === '/' || p === '' || p.endsWith('/index.html');
-  return isHome ? '' : 'index.html';
+  return p === '/' || p === '' || p.endsWith('/index.html');
+}
+// ใช้กับลิงก์ที่ชี้ไปยัง section บน Home (#stories ฯลฯ) — ถ้าอยู่ที่ Home อยู่แล้วใช้ # เฉยๆ
+// (same-page scroll) ถ้าอยู่หน้าอื่นให้พ่วง path ของ Home ไปด้วย
+function homeAnchor(hash) {
+  return (isHomePage() ? '' : HOME) + hash;
 }
 
 /**
  * <site-header variant="full|simple">
- * - full   (ค่าเริ่มต้น): เมนูเต็มพร้อมลิงก์ไปแต่ละ section + ปุ่มแฮมเบอร์เกอร์มือถือ (ใช้ในหน้า Home)
+ * - full   (ค่าเริ่มต้น): เมนูเต็มพร้อมลิงก์ไปแต่ละหน้า/section + ปุ่มแฮมเบอร์เกอร์มือถือ (ใช้ในหน้า Home)
  * - simple: โลโก้ + ลิงก์ "กลับหน้าแรก" (ใช้ในหน้าบทความ)
  */
 class SiteHeader extends HTMLElement {
   connectedCallback() {
     const variant = this.getAttribute('variant') || 'full';
-    const prefix = homePrefix();
 
     if (variant === 'simple') {
       this.innerHTML = `
 <header>
   <nav class="nav">
-    <a href="${prefix}#top" class="logo"><span>🌿</span> แม่วัยทอง</a>
-    <a href="${prefix}#articles" class="back-link">← กลับหน้าแรก</a>
+    <a href="${HOME}#top" class="logo"><span>🌿</span> แม่วัยทอง</a>
+    <a href="${HOME}#top" class="back-link">← กลับหน้าแรก</a>
   </nav>
 </header>`;
       return;
@@ -35,12 +40,12 @@ class SiteHeader extends HTMLElement {
     this.innerHTML = `
 <header>
   <nav class="nav">
-    <a href="${prefix}#top" class="logo"><span>🌿</span> แม่วัยทอง</a>
+    <a href="${HOME}#top" class="logo"><span>🌿</span> แม่วัยทอง</a>
     <ul class="nav-links">
-      <li><a href="${prefix}#about">แนะนำตัว</a></li>
-      <li><a href="${prefix}#stories">เรื่องราว</a></li>
-      <li><a href="${prefix}#activities">กิจกรรม</a></li>
-      <li><a href="${prefix}#articles">บทความ</a></li>
+      <li><a href="/about.html">แนะนำตัว</a></li>
+      <li><a href="${homeAnchor('#stories')}">เรื่องราว</a></li>
+      <li><a href="/activities.html">กิจกรรม</a></li>
+      <li><a href="/blog/index.html">บทความ</a></li>
     </ul>
     <div class="nav-cta">
       <a href="${FB_URL}" target="_blank" rel="noopener" class="btn btn-primary">ติดตาม Facebook</a>
@@ -50,10 +55,10 @@ class SiteHeader extends HTMLElement {
     </button>
   </nav>
   <div class="mobile-panel" id="mobilePanel">
-    <a href="${prefix}#about">แนะนำตัว</a>
-    <a href="${prefix}#stories">เรื่องราว</a>
-    <a href="${prefix}#activities">กิจกรรม</a>
-    <a href="${prefix}#articles">บทความ</a>
+    <a href="/about.html">แนะนำตัว</a>
+    <a href="${homeAnchor('#stories')}">เรื่องราว</a>
+    <a href="/activities.html">กิจกรรม</a>
+    <a href="/blog/index.html">บทความ</a>
     <a href="${FB_URL}" target="_blank" rel="noopener">ติดตาม Facebook →</a>
   </div>
 </header>`;
