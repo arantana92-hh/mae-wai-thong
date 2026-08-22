@@ -79,5 +79,107 @@ class SiteFooter extends HTMLElement {
   }
 }
 
+/**
+ * <article-card> — การ์ดบทความที่ใช้ซ้ำได้ (Home / Blog / Category / Search ในอนาคต)
+ * รับข้อมูลผ่าน property เท่านั้น ไม่มีเนื้อหา hardcode อยู่ใน component:
+ *
+ *   const card = document.createElement('article-card');
+ *   card.article = { id, title, excerpt, category, image, slug, date, readingTime, featured };
+ *   container.appendChild(card);
+ *
+ * - image เป็น null ได้ (จะแสดง placeholder ที่ไม่มีข้อความหลอก แทนการสร้างภาพปลอม)
+ * - ลิงก์บทความคำนวณจาก slug ตามระบบ routing เดิมของไซต์: /blog/article-<slug>.html
+ * - การ์ดทั้งใบเป็นลิงก์เดียว (a11y: 1 accessible name ต่อการ์ด, keyboard-operable โดยไม่ต้องเขียน JS เพิ่ม)
+ */
+class ArticleCard extends HTMLElement {
+  set article(data) {
+    this._article = data;
+    this.render();
+  }
+  get article() {
+    return this._article;
+  }
+  render() {
+    const a = this._article;
+    if (!a) return;
+    this.classList.add('article-card-editorial');
+
+    const url = `/blog/article-${a.slug}.html`;
+    const dateLabel = formatArticleDate(a.date);
+    const mediaHtml = a.image
+      ? `<img src="${a.image}" alt="${escapeHtml(a.title)}" loading="lazy">`
+      : `<div class="article-card-editorial__placeholder" aria-hidden="true">
+           <svg viewBox="0 0 24 24" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a1.5 1.5 0 00-2.1 0L4 19"/></svg>
+         </div>`;
+
+    this.innerHTML = `
+<a href="${url}" class="article-card-editorial__link" aria-label="${escapeHtml(a.title)} — อ่านเพิ่มเติม">
+  <div class="article-card-editorial__media">${mediaHtml}</div>
+  <div class="article-card-editorial__body">
+    <span class="article-card-editorial__category">${escapeHtml(a.category)}</span>
+    <h3 class="article-card-editorial__title">${escapeHtml(a.title)}</h3>
+    <p class="article-card-editorial__excerpt">${escapeHtml(a.excerpt)}</p>
+    <p class="article-card-editorial__meta">
+      <time datetime="${a.date}">${dateLabel}</time>
+      <span aria-hidden="true"> · </span>
+      <span>อ่าน ${a.readingTime} นาที</span>
+    </p>
+  </div>
+</a>`;
+  }
+}
+
+function escapeHtml(str) {
+  const div = document.createElement('div');
+  div.textContent = str == null ? '' : String(str);
+  return div.innerHTML;
+}
+
+function formatArticleDate(isoDate) {
+  const months = ['ม.ค.', 'ก.พ.', 'มี.ค.', 'เม.ย.', 'พ.ค.', 'มิ.ย.', 'ก.ค.', 'ส.ค.', 'ก.ย.', 'ต.ค.', 'พ.ย.', 'ธ.ค.'];
+  const [y, m, d] = isoDate.split('-').map(Number);
+  return `${d} ${months[m - 1]} ${y}`;
+}
+
+/**
+ * <activity-card> — การ์ดไอเดียกิจกรรมที่ใช้ซ้ำได้ (Home / หน้า Activities)
+ * รับข้อมูลผ่าน property เช่นเดียวกับ <article-card>:
+ *
+ *   const card = document.createElement('activity-card');
+ *   card.activity = { id, title, description, category, image, featured };
+ *   container.appendChild(card);
+ *
+ * ไม่มีลิงก์ภายใน (กิจกรรมไม่มีหน้ารายละเอียดแยก) — เป็นการ์ดข้อมูลล้วนๆ
+ */
+class ActivityCard extends HTMLElement {
+  set activity(data) {
+    this._activity = data;
+    this.render();
+  }
+  get activity() {
+    return this._activity;
+  }
+  render() {
+    const a = this._activity;
+    if (!a) return;
+    this.classList.add('activity-card-editorial');
+
+    const mediaHtml = a.image
+      ? `<img src="${a.image}" alt="${escapeHtml(a.title)}" loading="lazy">`
+      : `<div class="activity-card-editorial__placeholder" aria-hidden="true">
+           <svg viewBox="0 0 24 24" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a1.5 1.5 0 00-2.1 0L4 19"/></svg>
+         </div>`;
+
+    this.innerHTML = `
+<div class="activity-card-editorial__media">${mediaHtml}</div>
+<div class="activity-card-editorial__body">
+  <h3 class="activity-card-editorial__title">${escapeHtml(a.title)}</h3>
+  <p class="activity-card-editorial__desc">${escapeHtml(a.description)}</p>
+</div>`;
+  }
+}
+
 customElements.define('site-header', SiteHeader);
 customElements.define('site-footer', SiteFooter);
+customElements.define('article-card', ArticleCard);
+customElements.define('activity-card', ActivityCard);

@@ -504,6 +504,23 @@ article h2{ font-size: 1.2rem; margin: 36px 0 14px; }
 .theme-sage .article-tag{ color: #586F52; background: var(--sage-tint); }
 .theme-sage .callout{ background: var(--sage-tint); box-shadow: none; margin: 32px 0 0; }
 
+/* ---------- Activity card (editorial) — มาจาก <activity-card> component ----------
+   ใช้ร่วมกันทั้ง Home (Featured) และ activities.html — จึงอยู่ใน base.css ไม่ใช่
+   scoped style ของหน้าใดหน้าหนึ่ง */
+.activity-card-editorial{ display: block; }
+.activity-card-editorial__media{
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: var(--bg-alt);
+}
+.activity-card-editorial__media img{ width: 100%; height: 100%; object-fit: cover; }
+.activity-card-editorial__placeholder{ width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+.activity-card-editorial__placeholder svg{ width: 36px; height: 36px; stroke: var(--ink-soft); opacity: 0.3; fill: none; }
+.activity-card-editorial__title{ font-size: 1.1rem; color: var(--ink); margin-bottom: 8px; }
+.activity-card-editorial__desc{ color: var(--ink-soft); font-size: 0.95rem; margin: 0; }
+
 /* ---------- Facebook CTA ---------- */
 .fb-banner{
   background: linear-gradient(135deg, var(--rose) 0%, var(--rose-dark) 100%);
