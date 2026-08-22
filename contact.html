@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ติดต่อเรา | ชีวิตดีๆ แม่วัยทองกับลูกวัยเรียน</title>
+<meta name="description" content="ช่องทางติดต่อชีวิตดีๆ แม่วัยทองกับลูกวัยเรียน ทาง Facebook, TikTok และอีเมล สำหรับพูดคุยหรือชวนร่วมงาน">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mae-wai-thong.netlify.app/contact.html">
+<meta property="og:title" content="ติดต่อเรา | ชีวิตดีๆ แม่วัยทองกับลูกวัยเรียน">
+<meta property="og:description" content="ช่องทางติดต่อชีวิตดีๆ แม่วัยทองกับลูกวัยเรียน สำหรับพูดคุยหรือชวนร่วมงาน">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍵</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Mitr:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<style>
+  .page-hero{ padding: 56px 0 12px; text-align: center; }
+  .page-hero .eyebrow{ margin-bottom: 14px; }
+  .page-hero h1{ font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 14px; }
+  .page-hero p{ color: var(--ink-soft); max-width: 560px; margin: 0 auto; }
+  .contact-section{ padding: 48px 0 96px; }
+  .contact-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .contact-card{
+    padding: 34px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+  }
+  .contact-card .contact-icon{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    margin: 0 auto 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(201, 123, 134, 0.12);
+  }
+  .contact-card .contact-icon svg{ width: 26px; height: 26px; stroke: var(--rose-dark); fill: none; }
+  .contact-card h3{ font-size: 1.05rem; color: var(--ink); margin-bottom: 6px; }
+  .contact-card p{ color: var(--ink-soft); font-size: 0.92rem; margin: 0; }
+  .contact-card:hover{ transform: translateY(-6px); box-shadow: var(--shadow-hover); }
+  @media (max-width: 640px){
+    .contact-grid{ grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<site-header></site-header>
+
+<main id="top">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">💌 ติดต่อเรา</span>
+      <h1>คุยกันได้เลยค่ะ</h1>
+      <p>ไม่ว่าจะทักมาทักทาย แชร์เรื่องราวของคุณ หรือสนใจร่วมงานกัน ยินดีมากๆ ค่ะ</p>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="wrap">
+      <div class="contact-grid">
+        <a href="https://www.facebook.com/share/1D57ZSNNBr/" target="_blank" rel="noopener" class="card contact-card reveal">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></div>
+          <h3>Facebook</h3>
+          <p>ติดตามเรื่องราวและไอเดียใหม่ๆ ทุกสัปดาห์</p>
+        </a>
+        <a href="https://www.tiktok.com/@aoyarantana" target="_blank" rel="noopener" class="card contact-card reveal">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></div>
+          <h3>TikTok</h3>
+          <p>@aoyarantana — คลิปสั้นๆ เรื่องราวประจำวัน</p>
+        </a>
+        <a href="mailto:arantana92@gmail.com" class="card contact-card reveal">
+          <div class="contact-icon"><svg viewBox="0 0 24 24" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+          <h3>อีเมล</h3>
+          <p>arantana92@gmail.com</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<site-footer></site-footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">↑</a>
+
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

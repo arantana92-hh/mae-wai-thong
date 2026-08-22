@@ -43,9 +43,10 @@ class SiteHeader extends HTMLElement {
     <a href="${HOME}#top" class="logo"><span>🌿</span> แม่วัยทอง</a>
     <ul class="nav-links">
       <li><a href="/about.html">แนะนำตัว</a></li>
-      <li><a href="${homeAnchor('#stories')}">เรื่องราว</a></li>
-      <li><a href="/activities.html">กิจกรรม</a></li>
       <li><a href="/blog/index.html">บทความ</a></li>
+      <li><a href="/activities.html">กิจกรรม</a></li>
+      <li><a href="/portfolio.html">ผลงาน</a></li>
+      <li><a href="/contact.html">ติดต่อ</a></li>
     </ul>
     <div class="nav-cta">
       <a href="${FB_URL}" target="_blank" rel="noopener" class="btn btn-primary">ติดตาม Facebook</a>
@@ -57,8 +58,10 @@ class SiteHeader extends HTMLElement {
   <div class="mobile-panel" id="mobilePanel">
     <a href="/about.html">แนะนำตัว</a>
     <a href="${homeAnchor('#stories')}">เรื่องราว</a>
-    <a href="/activities.html">กิจกรรม</a>
     <a href="/blog/index.html">บทความ</a>
+    <a href="/activities.html">กิจกรรม</a>
+    <a href="/portfolio.html">ผลงาน</a>
+    <a href="/contact.html">ติดต่อ</a>
     <a href="${FB_URL}" target="_blank" rel="noopener">ติดตาม Facebook →</a>
   </div>
 </header>`;
