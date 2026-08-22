@@ -42,7 +42,7 @@ class SiteHeader extends HTMLElement {
   <nav class="nav">
     <a href="${HOME}#top" class="logo"><span>🌿</span> แม่วัยทอง</a>
     <ul class="nav-links">
-      <li><a href="/about.html">แนะนำตัว</a></li>
+      <li><a href="/about.html">เรื่องราว</a></li>
       <li><a href="/blog/index.html">บทความ</a></li>
       <li><a href="/activities.html">กิจกรรม</a></li>
       <li><a href="/portfolio.html">ผลงาน</a></li>
@@ -56,8 +56,8 @@ class SiteHeader extends HTMLElement {
     </button>
   </nav>
   <div class="mobile-panel" id="mobilePanel">
-    <a href="/about.html">แนะนำตัว</a>
-    <a href="${homeAnchor('#stories')}">เรื่องราว</a>
+    <a href="/about.html">เรื่องราว</a>
+    <a href="${homeAnchor('#stories')}">เรื่องเล่าจากบ้านเรา</a>
     <a href="/blog/index.html">บทความ</a>
     <a href="/activities.html">กิจกรรม</a>
     <a href="/portfolio.html">ผลงาน</a>
