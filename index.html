@@ -111,6 +111,26 @@
   .brand-story__cta:hover{ border-color: var(--rose-dark); }
   .brand-story__cta:focus-visible{ outline: 3px solid var(--butter); outline-offset: 3px; }
 
+  /* ===== Lead Magnet Banner (Phase 10) ===== */
+  .lead-magnet-banner{
+    padding: 40px 0;
+    background: linear-gradient(135deg, rgba(232,184,75,0.14), rgba(124,148,115,0.10));
+  }
+  .lead-magnet-banner__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .lead-magnet-banner__text{ max-width: 560px; }
+  .lead-magnet-banner__text h2{ font-size: clamp(1.3rem, 2.6vw, 1.7rem); margin: 10px 0 8px; }
+  .lead-magnet-banner__text p{ color: var(--ink-soft); margin: 0; }
+  .lead-magnet-banner__btn{ flex-shrink: 0; }
+  @media (max-width: 720px){
+    .lead-magnet-banner__inner{ flex-direction: column; text-align: center; }
+  }
+
   /* ===== Featured Articles (data-driven, ใช้ <article-card> component) ===== */
   .featured-articles{ padding: 96px 0; }
   .featured-articles__head{ max-width: 640px; margin: 0 auto 56px; text-align: center; }
@@ -218,6 +238,18 @@
       <div class="hero-premium__visual">
         <img src="images/mom-daughter-nurse.jpg" alt="คุณแม่ในชุดเจ้าหน้าที่โรงพยาบาลอุ้มลูกสาวไว้บนบ่า ยิ้มด้วยกัน" class="photo-placeholder">
       </div>
+    </div>
+  </section>
+
+  <!-- ============ FREE LEAD MAGNET BANNER (Phase 10) ============ -->
+  <section class="lead-magnet-banner">
+    <div class="wrap lead-magnet-banner__inner">
+      <div class="lead-magnet-banner__text">
+        <span class="eyebrow">🎁 ของฟรีจากเรา</span>
+        <h2>เช็คลิสต์ 10 ไอเดียกิจกรรมแม่ลูก ไม่ต้องเตรียมของ</h2>
+        <p>ดาวน์โหลดฟรี พิมพ์แปะตู้เย็น แล้วเริ่มติ๊กถูกไปพร้อมลูกได้เลยวันนี้</p>
+      </div>
+      <a href="/free-checklist.html" class="btn btn-primary btn-lg lead-magnet-banner__btn">รับเช็คลิสต์ฟรี</a>
     </div>
   </section>
 
