@@ -147,10 +147,33 @@
   .article-card-editorial__link:hover .article-card-editorial__media img{ transform: scale(1.03); }
   .article-card-editorial__placeholder{ width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
   .article-card-editorial__placeholder svg{ width: 40px; height: 40px; stroke: var(--ink-soft); opacity: 0.3; fill: none; }
-  .article-card-editorial__category{ display: inline-block; font-size: 0.78rem; font-weight: 600; color: #A15561; margin-bottom: 10px; }
+  .article-card-editorial__category{ display: inline-block; font-size: 0.78rem; font-weight: 600; color: #99515C; margin-bottom: 10px; }
   .article-card-editorial__title{ font-size: 1.2rem; color: var(--ink); margin-bottom: 10px; line-height: 1.5; }
   .article-card-editorial__excerpt{ color: var(--ink-soft); font-size: 0.96rem; margin-bottom: 14px; }
   .article-card-editorial__meta{ font-size: 0.85rem; color: var(--ink-soft); margin: 0; }
+
+  /* ===== Portfolio (data-driven, ใช้ <portfolio-card> component) ===== */
+  .featured-portfolio{ padding: 96px 0; }
+  .featured-portfolio__head{ max-width: 640px; margin: 0 auto 56px; text-align: center; }
+  .featured-portfolio__heading{ font-size: clamp(1.8rem, 3.6vw, 2.5rem); }
+  .featured-portfolio__sub{ color: var(--ink-soft); margin-top: 14px; font-size: 1.05rem; }
+  .featured-portfolio__cta{ text-align: center; margin-top: 56px; }
+
+  .featured-portfolio__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px 32px;
+  }
+  .featured-portfolio__grid > portfolio-card:first-of-type{
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  .featured-portfolio__grid > portfolio-card:first-of-type .portfolio-card-editorial__media{ margin-bottom: 0; }
+  .featured-portfolio__grid > portfolio-card:first-of-type .portfolio-card-editorial__title{ font-size: 1.6rem; }
+  .featured-portfolio__grid > portfolio-card:first-of-type .portfolio-card-editorial__desc{ font-size: 1.02rem; }
 
   @media (max-width: 860px){
     .hero-premium__inner{ grid-template-columns: 1fr; gap: 40px; }
@@ -159,6 +182,9 @@
     .featured-articles__grid > article-card:first-of-type{ grid-column: auto; }
     .featured-articles__grid > article-card:first-of-type .article-card-editorial__link{ grid-template-columns: 1fr; gap: 20px; }
     .featured-articles__grid > article-card:first-of-type .article-card-editorial__title{ font-size: 1.35rem; }
+    .featured-portfolio__grid{ grid-template-columns: 1fr; }
+    .featured-portfolio__grid > portfolio-card:first-of-type{ grid-column: auto; grid-template-columns: 1fr; gap: 20px; }
+    .featured-portfolio__grid > portfolio-card:first-of-type .portfolio-card-editorial__title{ font-size: 1.35rem; }
   }
   @media (max-width: 640px){
     .hero-premium{ padding: 56px 20px 64px; }
@@ -166,6 +192,7 @@
     .brand-story{ padding: 64px 0; }
     .brand-story__body p{ font-size: 1.04rem; }
     .featured-articles{ padding: 64px 0; }
+    .featured-portfolio{ padding: 64px 0; }
   }
 </style>
 </head>
@@ -276,6 +303,22 @@
     </div>
   </section>
 
+  <!-- ============ PORTFOLIO (Premium, data-driven) ============ -->
+  <section class="featured-portfolio section-alt" id="portfolio">
+    <div class="wrap">
+      <div class="featured-portfolio__head">
+        <h2 class="featured-portfolio__heading">สิ่งที่เราทำและรัก</h2>
+        <p class="featured-portfolio__sub">พื้นที่เล็กๆ ที่รวบรวมเรื่องราว ผลงาน<br>และสิ่งที่เราได้เรียนรู้ระหว่างทาง</p>
+      </div>
+      <div class="featured-portfolio__grid" id="featuredPortfolioGrid">
+        <!-- การ์ดถูก render ด้วย <portfolio-card> จาก js/data/portfolio.js ผ่าน script ท้ายหน้า -->
+      </div>
+      <div class="featured-portfolio__cta">
+        <a href="portfolio.html" class="brand-story__cta">ดูผลงานทั้งหมด →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ FACEBOOK CTA ============ -->
   <section class="section-alt">
     <div class="wrap">
@@ -298,6 +341,7 @@
 
 <script src="js/data/articles.js"></script>
 <script src="js/data/activities.js"></script>
+<script src="js/data/portfolio.js"></script>
 <script src="js/components.js"></script>
 <script src="js/main.js"></script>
 <script>
@@ -320,6 +364,16 @@
       const card = document.createElement('activity-card');
       card.activity = data;
       featuredActivitiesGrid.appendChild(card);
+    });
+  }
+
+  // Render ผลงานเด่นจาก PORTFOLIO (js/data/portfolio.js) ผ่าน <portfolio-card>
+  const featuredPortfolioGrid = document.getElementById('featuredPortfolioGrid');
+  if (featuredPortfolioGrid && typeof PORTFOLIO !== 'undefined') {
+    PORTFOLIO.filter(p => p.featured).forEach(data => {
+      const card = document.createElement('portfolio-card');
+      card.portfolio = data;
+      featuredPortfolioGrid.appendChild(card);
     });
   }
 </script>

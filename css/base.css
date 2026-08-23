@@ -518,7 +518,7 @@ article h2{ font-size: 1.2rem; margin: 36px 0 14px; }
 .activity-card-editorial__media img{ width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
 .activity-card-editorial__placeholder{ width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
 .activity-card-editorial__placeholder svg{ width: 36px; height: 36px; stroke: var(--ink-soft); opacity: 0.3; fill: none; }
-.activity-card-editorial__category{ display: inline-block; font-size: 0.78rem; font-weight: 600; color: #A15561; margin-bottom: 8px; }
+.activity-card-editorial__category{ display: inline-block; font-size: 0.78rem; font-weight: 600; color: #99515C; margin-bottom: 8px; }
 .activity-card-editorial__title{ font-size: 1.1rem; color: var(--ink); margin-bottom: 8px; }
 .activity-card-editorial__desc{ color: var(--ink-soft); font-size: 0.95rem; margin: 0 0 12px; }
 .activity-card-editorial__meta{ font-size: 0.82rem; color: var(--ink-soft); margin: 0 0 10px; }
@@ -541,6 +541,35 @@ article h2{ font-size: 1.2rem; margin: 36px 0 14px; }
 .activity-card-editorial__link{ display: block; text-decoration: none; color: inherit; }
 .activity-card-editorial__link:focus-visible{ outline: 3px solid var(--butter); outline-offset: 4px; border-radius: 4px; }
 .activity-card-editorial__link:hover .activity-card-editorial__media img{ transform: scale(1.03); }
+
+/* ---------- Portfolio card (editorial) — มาจาก <portfolio-card> component ----------
+   ใช้ร่วมกันทั้ง Home และ portfolio.html — อยู่ใน base.css เหมือน article/activity card */
+.portfolio-card-editorial{ display: block; }
+.portfolio-card-editorial__media{
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 18px;
+  background: var(--bg-alt);
+}
+.portfolio-card-editorial__media img{ width: 100%; height: 100%; object-fit: cover; }
+.portfolio-card-editorial__placeholder{ width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
+.portfolio-card-editorial__placeholder svg{ width: 36px; height: 36px; stroke: var(--ink-soft); opacity: 0.3; fill: none; }
+.portfolio-card-editorial__category{ display: inline-block; font-size: 0.78rem; font-weight: 600; color: #99515C; margin-bottom: 8px; }
+.portfolio-card-editorial__title{ font-size: 1.15rem; color: var(--ink); margin-bottom: 8px; line-height: 1.5; }
+.portfolio-card-editorial__desc{ color: var(--ink-soft); font-size: 0.95rem; margin: 0 0 12px; }
+.portfolio-card-editorial__meta{ font-size: 0.82rem; color: var(--ink-soft); margin: 0 0 12px; }
+.portfolio-card-editorial__cta{
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--rose-dark);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s ease;
+}
+.portfolio-card-editorial__cta:hover{ border-color: var(--rose-dark); }
+.portfolio-card-editorial__cta:focus-visible{ outline: 3px solid var(--butter); outline-offset: 3px; border-radius: 2px; }
 
 /* ---------- Facebook CTA ---------- */
 .fb-banner{

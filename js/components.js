@@ -201,7 +201,63 @@ class ActivityCard extends HTMLElement {
   }
 }
 
+/**
+ * <portfolio-card> — การ์ดผลงานที่ใช้ซ้ำได้ (Home / Portfolio / Category ในอนาคต)
+ * รับข้อมูลผ่าน property เช่นเดียวกับ <article-card> / <activity-card>:
+ *
+ *   const card = document.createElement('portfolio-card');
+ *   card.portfolio = { id, title, description, category, image, platform, year, link, featured };
+ *   container.appendChild(card);
+ *
+ * ห้ามใส่ URL ปลอมใน `link` — ถ้ายังไม่มีผลงานจริงให้ใช้ null แล้ว component
+ * จะไม่แสดงปุ่ม "ดูผลงาน" เลย (เหมือน <activity-card> ที่ไม่แสดงลิงก์เมื่อ
+ * ยังไม่มีหน้ารายละเอียดจริงรองรับ)
+ */
+class PortfolioCard extends HTMLElement {
+  set portfolio(data) {
+    this._portfolio = data;
+    this.render();
+  }
+  get portfolio() {
+    return this._portfolio;
+  }
+  render() {
+    const p = this._portfolio;
+    if (!p) return;
+    this.classList.add('portfolio-card-editorial');
+
+    const mediaHtml = p.image
+      ? `<img src="${p.image}" alt="${escapeHtml(p.title)}" loading="lazy">`
+      : `<div class="portfolio-card-editorial__placeholder" aria-hidden="true">
+           <svg viewBox="0 0 24 24" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a1.5 1.5 0 00-2.1 0L4 19"/></svg>
+         </div>`;
+
+    const metaParts = [];
+    if (p.platform) metaParts.push(escapeHtml(p.platform));
+    if (p.year) metaParts.push(String(p.year));
+    const metaHtml = metaParts.length
+      ? `<p class="portfolio-card-editorial__meta">${metaParts.join(' · ')}</p>`
+      : '';
+
+    // แสดงปุ่ม "ดูผลงาน" เฉพาะเมื่อมีลิงก์จริงเท่านั้น
+    const linkHtml = p.link
+      ? `<a href="${p.link}" target="_blank" rel="noopener" class="portfolio-card-editorial__cta" aria-label="ดูผลงาน: ${escapeHtml(p.title)}">ดูผลงาน →</a>`
+      : '';
+
+    this.innerHTML = `
+<div class="portfolio-card-editorial__media">${mediaHtml}</div>
+<div class="portfolio-card-editorial__body">
+  <span class="portfolio-card-editorial__category">${escapeHtml(p.category)}</span>
+  <h3 class="portfolio-card-editorial__title">${escapeHtml(p.title)}</h3>
+  <p class="portfolio-card-editorial__desc">${escapeHtml(p.description)}</p>
+  ${metaHtml}
+  ${linkHtml}
+</div>`;
+  }
+}
+
 customElements.define('site-header', SiteHeader);
 customElements.define('site-footer', SiteFooter);
 customElements.define('article-card', ArticleCard);
 customElements.define('activity-card', ActivityCard);
+customElements.define('portfolio-card', PortfolioCard);
