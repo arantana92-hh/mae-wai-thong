@@ -94,6 +94,43 @@
     .magnet-preview{ order: 1; }
     .magnet-form-card{ order: 2; padding: 28px 22px; }
   }
+
+  .hero-jump-btn{ margin-top: 22px; }
+
+  .founder-note{
+    max-width: 640px;
+    margin: 0 auto 56px;
+    padding: 22px 26px;
+    background: var(--sage-tint);
+    border-radius: 16px;
+    font-size: 0.94rem;
+    color: var(--ink);
+    line-height: 1.75;
+  }
+  .founder-note strong{ color: var(--sage-dark); }
+
+  .faq-section{ max-width: 640px; margin: 0 auto; }
+  .faq-section h2{ font-size: 1.3rem; text-align: center; margin-bottom: 24px; }
+  .faq-item{ border-bottom: 1px solid rgba(58,50,45,0.12); padding: 16px 4px; }
+  .faq-item summary{
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--ink);
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+  .faq-item summary::-webkit-details-marker{ display: none; }
+  .faq-item summary::after{
+    content: "+";
+    font-size: 1.3rem;
+    color: var(--rose-dark);
+    flex-shrink: 0;
+  }
+  .faq-item[open] summary::after{ content: "−"; }
+  .faq-item p{ margin: 12px 0 0; color: var(--ink-soft); font-size: 0.92rem; }
 </style>
 </head>
 <body>
@@ -108,6 +145,7 @@
       <span class="eyebrow">🎁 ของฟรีจากเรา</span>
       <h1>เช็คลิสต์ 10 ไอเดียกิจกรรมแม่ลูก ไม่ต้องเตรียมของ</h1>
       <p>ทำได้เลยวันนี้ ไม่ต้องซื้อของเพิ่ม พิมพ์แปะตู้เย็นแล้วติ๊กถูกไปพร้อมลูกได้เลยค่ะ</p>
+      <a href="#signup-form" class="btn btn-sage hero-jump-btn">รับเช็คลิสต์ฟรี ↓</a>
     </div>
   </section>
 
@@ -123,7 +161,7 @@
           </ul>
         </div>
 
-        <div class="card magnet-form-card reveal">
+        <div class="card magnet-form-card reveal" id="signup-form">
           <h2>รับเช็คลิสต์ฟรี</h2>
           <p class="form-lede">กรอกอีเมลไว้ แล้วกดรับไฟล์ได้ทันทีค่ะ</p>
 
@@ -148,6 +186,26 @@
 
           <p class="privacy-note">เราจะไม่สแปมอีเมลคุณและไม่ส่งต่อข้อมูลให้บุคคลที่สาม<br>ใช้เพื่อส่งเรื่องราวและไอเดียใหม่ๆ เป็นครั้งคราวเท่านั้นค่ะ</p>
         </div>
+      </div>
+
+      <div class="founder-note reveal">
+        💬 <strong>จากใจคนทำเว็บนี้:</strong> เช็คลิสต์นี้มาจากกิจกรรมที่ลองทำกับลูกที่บ้านจริงๆ ทุกอย่างเรียบง่าย ไม่ต้องเตรียมของ เพราะเข้าใจดีว่าเวลาของคุณแม่มีจำกัดแค่ไหนค่ะ
+      </div>
+
+      <div class="faq-section">
+        <h2>คำถามที่พบบ่อย</h2>
+        <details class="faq-item">
+          <summary>ต้องเสียเงินไหม?</summary>
+          <p>ไม่ต้องค่ะ เช็คลิสต์นี้แจกฟรี 100% ไม่มีค่าใช้จ่ายแอบแฝง</p>
+        </details>
+        <details class="faq-item">
+          <summary>ได้ไฟล์ตอนไหน?</summary>
+          <p>กดรับเช็คลิสต์ฟรี กรอกอีเมล แล้วกดดาวน์โหลดได้ทันทีค่ะ ไม่ต้องรอ</p>
+        </details>
+        <details class="faq-item">
+          <summary>ใช้งานยังไง?</summary>
+          <p>พิมพ์แปะตู้เย็น หรือเปิดดูในมือถือระหว่างวันก็ได้ค่ะ เลือกกิจกรรมแล้วติ๊กถูกไปเรื่อยๆ</p>
+        </details>
       </div>
     </div>
   </section>
