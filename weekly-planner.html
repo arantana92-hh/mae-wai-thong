@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>แพลนเนอร์กิจกรรมแม่ลูกรายสัปดาห์ | ชีวิตดีๆ แม่วัยทองกับลูกวัยเรียน</title>
+<meta name="description" content="แพลนเนอร์กิจกรรมแม่ลูกรายสัปดาห์ ฉบับเต็ม 19 กิจกรรม เร็วๆ นี้ ราคาเปิดตัว 39 บาท กดรับแจ้งเตือนเมื่อเปิดขาย">
+<link rel="canonical" href="https://mae-wai-thong.netlify.app/weekly-planner.html">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mae-wai-thong.netlify.app/weekly-planner.html">
+<meta property="og:title" content="แพลนเนอร์กิจกรรมแม่ลูกรายสัปดาห์ (เร็วๆ นี้)">
+<meta property="og:description" content="ฉบับเต็ม 19 กิจกรรม จัดเป็นตารางรายสัปดาห์ ราคาเปิดตัว 39 บาท">
+<meta property="og:image" content="https://mae-wai-thong.netlify.app/images/planner-preview-cover.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍵</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Mitr:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<style>
+  .page-hero{ padding: 56px 0 12px; text-align: center; position: relative; overflow: hidden; }
+  .page-hero .eyebrow{ margin-bottom: 14px; }
+  .page-hero h1{ font-size: clamp(1.7rem, 4.2vw, 2.4rem); margin-bottom: 14px; max-width: 700px; margin-left: auto; margin-right: auto; }
+  .page-hero p{ color: var(--ink-soft); max-width: 560px; margin: 0 auto; }
+
+  .price-tag{
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--bg-alt); border: 1.5px dashed var(--rose);
+    color: var(--ink); font-weight: 700; font-size: 1rem;
+    padding: 8px 18px; border-radius: 999px; margin-top: 20px;
+  }
+  .price-tag .old-label{ font-weight: 400; color: var(--ink-soft); font-size: 0.85rem; }
+
+  .planner-section{ padding: 44px 0 40px; }
+  .planner-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    max-width: 780px;
+    margin: 0 auto 56px;
+  }
+  .planner-gallery figure{ margin: 0; text-align: center; }
+  .planner-gallery img{
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: var(--shadow-hover);
+    border: 1px solid rgba(58,50,45,0.08);
+  }
+  .planner-gallery figcaption{
+    margin-top: 10px; font-size: 0.82rem; color: var(--ink-soft);
+  }
+
+  .feature-list{
+    max-width: 640px; margin: 0 auto 56px;
+    list-style: none; padding: 0;
+    display: grid; gap: 14px;
+  }
+  .feature-list li{
+    display: flex; align-items: flex-start; gap: 12px;
+    background: var(--card); border-radius: 14px; padding: 16px 18px;
+    box-shadow: var(--shadow); font-size: 0.95rem; color: var(--ink);
+  }
+  .feature-list li::before{ content: "✓"; color: var(--sage-dark); font-weight: 700; flex-shrink: 0; }
+
+  .diff-note{
+    max-width: 640px; margin: 0 auto 56px; text-align: center;
+    font-size: 0.92rem; color: var(--ink-soft); background: var(--sage-tint);
+    border-radius: 14px; padding: 18px 22px;
+  }
+  .diff-note a{ color: var(--sage-dark); font-weight: 600; text-decoration: none; }
+  .diff-note a:hover{ text-decoration: underline; }
+
+  .waitlist-card{
+    max-width: 480px; margin: 0 auto; padding: 32px 28px; text-align: center;
+  }
+  .waitlist-card h2{ font-size: 1.2rem; margin: 0 0 8px; }
+  .waitlist-card .form-lede{ color: var(--ink-soft); font-size: 0.92rem; margin: 0 0 22px; }
+  .field{ margin-bottom: 16px; text-align: left; }
+  .field label{ display: block; font-size: 0.86rem; font-weight: 600; color: var(--ink); margin-bottom: 7px; }
+  .field input{
+    width: 100%; font-family: 'Mitr', sans-serif; font-size: 0.98rem;
+    padding: 13px 16px; border-radius: 12px; border: 1.5px solid rgba(58,50,45,0.18);
+    background: var(--bg); color: var(--ink);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  .field input:focus{ outline: none; border-color: var(--rose); box-shadow: 0 0 0 3px rgba(201,123,134,0.18); }
+  .field.hp{ position: absolute; left: -9999px; top: -9999px; }
+  .waitlist-card button{ width: 100%; justify-content: center; margin-top: 4px; }
+  .privacy-note{ font-size: 0.8rem; color: var(--ink-soft); margin-top: 16px; line-height: 1.6; }
+
+  @media (max-width: 640px){
+    .planner-gallery{ grid-template-columns: 1fr; max-width: 340px; }
+  }
+</style>
+</head>
+<body>
+
+<site-header></site-header>
+
+<main id="top">
+  <section class="page-hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="wrap" style="position:relative; z-index:1;">
+      <span class="eyebrow">🗓️ เร็วๆ นี้</span>
+      <h1>แพลนเนอร์กิจกรรมแม่ลูกรายสัปดาห์</h1>
+      <p>ฉบับเต็ม 19 กิจกรรม จัดเป็นตารางให้วางแผนเวลาคุณภาพกับลูกได้ทั้งเดือน ต่อยอดจากเช็คลิสต์ฟรีที่คุณมีอยู่แล้ว</p>
+      <div class="price-tag">🏷️ ราคาเปิดตัว 39 บาท <span class="old-label">(ยังไม่เปิดขาย)</span></div>
+    </div>
+  </section>
+
+  <section class="planner-section">
+    <div class="wrap">
+
+      <div class="planner-gallery">
+        <figure class="reveal">
+          <img src="images/planner-preview-cover.jpg" width="350" height="495" alt="หน้าปกแพลนเนอร์กิจกรรมแม่ลูกรายสัปดาห์" loading="lazy">
+          <figcaption>หน้าปก</figcaption>
+        </figure>
+        <figure class="reveal">
+          <img src="images/planner-preview-week.jpg" width="350" height="495" alt="ตัวอย่างตารางกิจกรรมประจำสัปดาห์ในแพลนเนอร์" loading="lazy">
+          <figcaption>ตัวอย่างตารางรายสัปดาห์</figcaption>
+        </figure>
+      </div>
+
+      <ul class="feature-list">
+        <li>กิจกรรมครบทั้ง 19 รายการจากเว็บไซต์ จัดหมวดหมู่ให้เลือกใช้ง่าย</li>
+        <li>ตารางรายสัปดาห์ วางแผนกิจกรรมแต่ละวันได้ล่วงหน้า</li>
+        <li>ช่องทบทวนท้ายสัปดาห์ บันทึกความรู้สึกและไอเดียของคุณแม่เอง</li>
+        <li>ไฟล์ PDF พิมพ์ได้ไม่จำกัดจำนวนครั้ง ใช้ซ้ำได้ทุกเดือน</li>
+      </ul>
+
+      <p class="diff-note">
+        มีเช็คลิสต์ 10 ไอเดียฟรีอยู่แล้วใช่ไหมคะ? แพลนเนอร์ฉบับเต็มนี้ต่อยอดให้ครบทั้ง 19 กิจกรรม พร้อมตารางวางแผนแบบรายสัปดาห์
+        ยังไม่เคยรับเช็คลิสต์ฟรี? <a href="free-checklist.html">กดรับที่นี่ก่อนได้เลยค่ะ</a>
+      </p>
+
+      <div class="card waitlist-card reveal">
+        <h2>รับแจ้งเตือนเมื่อเปิดขาย</h2>
+        <p class="form-lede">ฝากอีเมลไว้ พอเปิดขายจริงจะแจ้งให้ทราบเป็นคนแรกๆ ค่ะ</p>
+
+        <form name="planner-waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you-waitlist.html">
+          <input type="hidden" name="form-name" value="planner-waitlist">
+          <div class="field hp">
+            <label>อย่ากรอกช่องนี้ถ้าคุณเป็นมนุษย์<input type="text" name="bot-field"></label>
+          </div>
+
+          <div class="field">
+            <label for="email">อีเมล</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
+          </div>
+
+          <button type="submit" class="btn btn-sage btn-lg">รับแจ้งเตือนเมื่อเปิดขาย</button>
+        </form>
+
+        <p class="privacy-note">เราจะไม่สแปมอีเมลคุณและไม่ส่งต่อข้อมูลให้บุคคลที่สาม<br>ใช้แจ้งเตือนเรื่องนี้เรื่องเดียวเท่านั้นค่ะ</p>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<site-footer></site-footer>
+
+<a href="#top" class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">↑</a>
+
+<script src="js/components.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
