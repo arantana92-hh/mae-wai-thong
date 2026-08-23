@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mae-wai-thong.netlify.app/sitemap.xml
