@@ -1,0 +1,13 @@
+# OS junk files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment / secrets (ไม่ควรมีในโปรเจกต์นี้อยู่แล้ว แต่กันไว้)
+.env
+.env.*
+
+# Claude Code — worktree ของ session อื่นที่อาจถูกสร้างไว้ในเครื่อง
+.claude/worktrees/
