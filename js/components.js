@@ -170,12 +170,34 @@ class ActivityCard extends HTMLElement {
            <svg viewBox="0 0 24 24" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a1.5 1.5 0 00-2.1 0L4 19"/></svg>
          </div>`;
 
-    this.innerHTML = `
+    const skillsHtml = (a.skills && a.skills.length)
+      ? `<ul class="activity-card-editorial__skills">${a.skills.map(s => `<li>${escapeHtml(s)}</li>`).join('')}</ul>`
+      : '';
+
+    // ระดับความยาก/อายุ/เวลา แสดงเป็น "ข้อความ" เสมอ ไม่ใช้สีอย่างเดียวสื่อความหมาย
+    const metaHtml = `
+<p class="activity-card-editorial__meta">
+  <span>⏱ ${escapeHtml(a.duration)}</span>
+  <span aria-hidden="true"> · </span>
+  <span>อายุ ${escapeHtml(a.ageRange)}</span>
+  <span aria-hidden="true"> · </span>
+  <span>ระดับ${escapeHtml(a.difficulty)}</span>
+</p>`;
+
+    const bodyHtml = `
 <div class="activity-card-editorial__media">${mediaHtml}</div>
 <div class="activity-card-editorial__body">
+  <span class="activity-card-editorial__category">${escapeHtml(a.category)}</span>
   <h3 class="activity-card-editorial__title">${escapeHtml(a.title)}</h3>
   <p class="activity-card-editorial__desc">${escapeHtml(a.description)}</p>
+  ${metaHtml}
+  ${skillsHtml}
 </div>`;
+
+    // ห่อด้วยลิงก์เฉพาะเมื่อมี Activity Detail Page จริง (featured: true) — ป้องกันลิงก์พัง
+    this.innerHTML = (a.featured && a.slug)
+      ? `<a href="/activities/${a.slug}.html" class="activity-card-editorial__link" aria-label="${escapeHtml(a.title)} — ดูรายละเอียดกิจกรรม">${bodyHtml}</a>`
+      : bodyHtml;
   }
 }
 

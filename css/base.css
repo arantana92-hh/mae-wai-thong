@@ -477,7 +477,7 @@ article h2{ font-size: 1.2rem; margin: 36px 0 14px; }
   box-shadow: var(--shadow);
 }
 .quick-list-title{ font-weight: 700; color: var(--sage-dark); margin: 0 0 10px; font-size: 0.98rem; }
-.quick-list ol{ margin: 0; padding-left: 22px; }
+.quick-list ol, .quick-list ul{ margin: 0; padding-left: 22px; }
 .quick-list li{ margin-bottom: 6px; }
 .step{ display: flex; align-items: center; gap: 12px; margin: 34px 0 12px; }
 .step-num{
@@ -515,11 +515,32 @@ article h2{ font-size: 1.2rem; margin: 36px 0 14px; }
   margin-bottom: 18px;
   background: var(--bg-alt);
 }
-.activity-card-editorial__media img{ width: 100%; height: 100%; object-fit: cover; }
+.activity-card-editorial__media img{ width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
 .activity-card-editorial__placeholder{ width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; }
 .activity-card-editorial__placeholder svg{ width: 36px; height: 36px; stroke: var(--ink-soft); opacity: 0.3; fill: none; }
+.activity-card-editorial__category{ display: inline-block; font-size: 0.78rem; font-weight: 600; color: #A15561; margin-bottom: 8px; }
 .activity-card-editorial__title{ font-size: 1.1rem; color: var(--ink); margin-bottom: 8px; }
-.activity-card-editorial__desc{ color: var(--ink-soft); font-size: 0.95rem; margin: 0; }
+.activity-card-editorial__desc{ color: var(--ink-soft); font-size: 0.95rem; margin: 0 0 12px; }
+.activity-card-editorial__meta{ font-size: 0.82rem; color: var(--ink-soft); margin: 0 0 10px; }
+.activity-card-editorial__skills{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+}
+.activity-card-editorial__skills li{
+  font-size: 0.75rem;
+  color: #566D50;
+  background: rgba(124, 148, 115, 0.14);
+  padding: 3px 10px;
+  border-radius: 999px;
+}
+/* ลิงก์ทั้งการ์ด — ใช้เฉพาะกิจกรรมที่มี Detail Page จริง (featured: true) */
+.activity-card-editorial__link{ display: block; text-decoration: none; color: inherit; }
+.activity-card-editorial__link:focus-visible{ outline: 3px solid var(--butter); outline-offset: 4px; border-radius: 4px; }
+.activity-card-editorial__link:hover .activity-card-editorial__media img{ transform: scale(1.03); }
 
 /* ---------- Facebook CTA ---------- */
 .fb-banner{
