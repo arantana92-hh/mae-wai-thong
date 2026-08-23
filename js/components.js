@@ -46,6 +46,7 @@ class SiteHeader extends HTMLElement {
       <li><a href="/blog/index.html">บทความ</a></li>
       <li><a href="/activities.html">กิจกรรม</a></li>
       <li><a href="/portfolio.html">ผลงาน</a></li>
+      <li><a href="/recommended.html">ของแนะนำ</a></li>
       <li><a href="/contact.html">ติดต่อ</a></li>
     </ul>
     <div class="nav-cta">
@@ -61,6 +62,7 @@ class SiteHeader extends HTMLElement {
     <a href="/blog/index.html">บทความ</a>
     <a href="/activities.html">กิจกรรม</a>
     <a href="/portfolio.html">ผลงาน</a>
+    <a href="/recommended.html">ของแนะนำ</a>
     <a href="/contact.html">ติดต่อ</a>
     <a href="${FB_URL}" target="_blank" rel="noopener">ติดตาม Facebook →</a>
   </div>
@@ -257,6 +259,54 @@ class PortfolioCard extends HTMLElement {
 }
 
 /**
+ * <affiliate-card> — การ์ดสินค้าพันธมิตร (affiliate) ใช้ซ้ำได้ (หน้า "ของแนะนำ", Phase 14)
+ * รับข้อมูลผ่าน property เช่นเดียวกับการ์ดอื่นๆ:
+ *
+ *   const card = document.createElement('affiliate-card');
+ *   card.affiliate = { id, title, description, category, image, price, link };
+ *   container.appendChild(card);
+ *
+ * ใช้คลาส CSS ร่วมกับ <portfolio-card> (โครงหน้าตาเดียวกัน ไม่ต้องเพิ่ม CSS ใหม่)
+ * ลิงก์เป็น affiliate link จริงเท่านั้น (ต่างจาก <portfolio-card> ตรงที่ไม่มี
+ * link: null เพราะสินค้าที่แสดงในหน้านี้ต้องมีลิงก์จริงเสมอ) ใช้ rel="sponsored
+ * noopener" ตามแนวทางของ Google สำหรับลิงก์พันธมิตร/ลิงก์ที่ได้รับค่าตอบแทน
+ */
+class AffiliateCard extends HTMLElement {
+  set affiliate(data) {
+    this._affiliate = data;
+    this.render();
+  }
+  get affiliate() {
+    return this._affiliate;
+  }
+  render() {
+    const p = this._affiliate;
+    if (!p) return;
+    this.classList.add('portfolio-card-editorial');
+
+    const mediaHtml = p.image
+      ? `<img src="${p.image}" alt="${escapeHtml(p.title)}" loading="lazy">`
+      : `<div class="portfolio-card-editorial__placeholder" aria-hidden="true">
+           <svg viewBox="0 0 24 24" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5a1.5 1.5 0 00-2.1 0L4 19"/></svg>
+         </div>`;
+
+    const metaHtml = p.price
+      ? `<p class="portfolio-card-editorial__meta">${escapeHtml(p.price)}</p>`
+      : '';
+
+    this.innerHTML = `
+<div class="portfolio-card-editorial__media">${mediaHtml}</div>
+<div class="portfolio-card-editorial__body">
+  <span class="portfolio-card-editorial__category">${escapeHtml(p.category)}</span>
+  <h3 class="portfolio-card-editorial__title">${escapeHtml(p.title)}</h3>
+  <p class="portfolio-card-editorial__desc">${escapeHtml(p.description)}</p>
+  ${metaHtml}
+  <a href="${p.link}" target="_blank" rel="sponsored noopener" class="portfolio-card-editorial__cta" aria-label="ดูสินค้า: ${escapeHtml(p.title)}">ดูสินค้า →</a>
+</div>`;
+  }
+}
+
+/**
  * <lead-magnet-cta> — การ์ดชวนรับเช็คลิสต์ฟรี ใช้ซ้ำได้ทุกหน้า (Phase 13: Content Funnel)
  * ไม่มี property ให้ตั้งค่า (ข้อความเดียวกันทุกที่ที่ใช้) วางไว้ท้ายบทความ/หน้ารายการ
  * เพื่อชวนคนที่กำลังอ่านเนื้อหาอยู่ไปรับเช็คลิสต์ฟรีต่อ
@@ -280,3 +330,4 @@ customElements.define('article-card', ArticleCard);
 customElements.define('activity-card', ActivityCard);
 customElements.define('portfolio-card', PortfolioCard);
 customElements.define('lead-magnet-cta', LeadMagnetCta);
+customElements.define('affiliate-card', AffiliateCard);
