@@ -496,6 +496,26 @@ article h2{ font-size: 1.2rem; margin: 36px 0 14px; }
 .step h2{ font-family: 'Mitr', sans-serif; font-weight: 700; font-size: 1.08rem; margin: 0; color: var(--ink); }
 .cta-back{ margin-top: 48px; padding-top: 28px; border-top: 1px solid rgba(58,50,45,0.1); }
 
+/* <lead-magnet-cta> — การ์ดชวนรับเช็คลิสต์ฟรี ใช้ซ้ำได้ทุกหน้า (Phase 13: Content Funnel) */
+.lead-magnet-cta{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, rgba(232,184,75,0.14), rgba(124,148,115,0.10));
+  border-radius: var(--radius);
+  padding: 24px 28px;
+  margin: 40px 0;
+}
+.lead-magnet-cta__icon{ font-size: 2rem; flex-shrink: 0; }
+.lead-magnet-cta__body{ flex: 1; min-width: 200px; }
+.lead-magnet-cta__title{ font-weight: 700; color: var(--ink); margin: 0 0 4px; font-size: 1rem; }
+.lead-magnet-cta__desc{ color: var(--ink-soft); margin: 0; font-size: 0.9rem; }
+.lead-magnet-cta .btn{ flex-shrink: 0; }
+@media (max-width: 560px){
+  .lead-magnet-cta{ flex-direction: column; text-align: center; padding: 24px 22px; }
+}
+
 /* บทความหมวด "คู่มือ" (guide) ใช้โทนเขียวเสจแทนกุหลาบ — เติมด้วย class="theme-sage" ที่ <body> */
 .theme-sage h1{ color: var(--sage-dark); }
 .theme-sage .logo{ color: var(--sage-dark); }

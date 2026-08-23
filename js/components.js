@@ -256,8 +256,27 @@ class PortfolioCard extends HTMLElement {
   }
 }
 
+/**
+ * <lead-magnet-cta> — การ์ดชวนรับเช็คลิสต์ฟรี ใช้ซ้ำได้ทุกหน้า (Phase 13: Content Funnel)
+ * ไม่มี property ให้ตั้งค่า (ข้อความเดียวกันทุกที่ที่ใช้) วางไว้ท้ายบทความ/หน้ารายการ
+ * เพื่อชวนคนที่กำลังอ่านเนื้อหาอยู่ไปรับเช็คลิสต์ฟรีต่อ
+ */
+class LeadMagnetCta extends HTMLElement {
+  connectedCallback() {
+    this.classList.add('lead-magnet-cta');
+    this.innerHTML = `
+<span class="lead-magnet-cta__icon" aria-hidden="true">🎁</span>
+<div class="lead-magnet-cta__body">
+  <p class="lead-magnet-cta__title">เช็คลิสต์ 10 ไอเดียกิจกรรมแม่ลูก ไม่ต้องเตรียมของ</p>
+  <p class="lead-magnet-cta__desc">ดาวน์โหลดฟรี ทำได้เลยวันนี้</p>
+</div>
+<a href="/free-checklist.html" class="btn btn-primary">รับฟรี →</a>`;
+  }
+}
+
 customElements.define('site-header', SiteHeader);
 customElements.define('site-footer', SiteFooter);
 customElements.define('article-card', ArticleCard);
 customElements.define('activity-card', ActivityCard);
 customElements.define('portfolio-card', PortfolioCard);
+customElements.define('lead-magnet-cta', LeadMagnetCta);
