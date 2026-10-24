@@ -10,14 +10,14 @@ Prompt ภาพและวิดีโอเขียนเป็นภาษ�
 
 | ตอน | ชื่อตอน | กลุ่ม | แนวคิด |
 |---|---|---|---|
-| 1 | ลูกไม่ได้ดื้อ ลูกกำลังล้น | เด็กเล็ก | Co-regulation |
+| 1 | ลูกไม่ได้ดื้อ ลูกกำลังล้น | ลูกวัยประถม | Co-regulation |
 | 2 | ยอมรับความรู้สึก ไม่ใช่ยอมทุกอย่าง | เด็ก | Emotion validation |
 | 3 | แม่ที่ดีพอ ก็ดีพอแล้ว | แม่ | Good enough mother |
 | 4 | ทะเลาะกันได้ แต่ต้องกลับมาคืนดี | แม่และลูก | Rupture and repair |
 | 5 | สมองวัยรุ่นยังสร้างไม่เสร็จ | วัยรุ่น | Adolescent brain development |
 | 6 | ฟังให้จบ ก่อนสอน | วัยรุ่น | Active listening |
 | 7 | ชมความพยายาม ไม่ใช่ความเก่ง | เด็กและวัยรุ่น | Growth mindset |
-| 8 | ซึมเศร้าหลังคลอด ไม่ใช่ความอ่อนแอ | แม่ | Postpartum depression |
+| 8 | อารมณ์แม่วัยทอง ไม่ใช่ความอ่อนแอ | แม่วัย 40+ | Perimenopause and mood |
 | 9 | ประตูห้องที่ปิด ไม่ใช่หัวใจที่ปิด | วัยรุ่น | Autonomy |
 | 10 | ใจดีกับลูกแล้ว ใจดีกับตัวเองด้วย | แม่ | Self-compassion |
 
@@ -25,50 +25,50 @@ Prompt ภาพและวิดีโอเขียนเป็นภาษ�
 
 ## ตอนที่ 1: ลูกไม่ได้ดื้อ ลูกกำลังล้น
 
-**กลุ่มเป้าหมาย:** แม่ลูกเล็ก 2 ถึง 6 ขวบ
-**แนวคิด:** Co-regulation เด็กเล็กยังควบคุมอารมณ์เองไม่ได้ ต้องยืมความสงบจากผู้ใหญ่
+**กลุ่มเป้าหมาย:** แม่ลูกวัยประถม 6 ถึง 12 ปี
+**แนวคิด:** Co-regulation และ after-school restraint collapse ลูกเก็บอารมณ์มาทั้งวันที่โรงเรียน แล้วมาปล่อยที่บ้านซึ่งเป็นที่ที่ปลอดภัยที่สุด
 
 **Hook (0:00 ถึง 0:03)**
-ลูกร้องไห้ลงไปนอนดิ้นกลางห้าง... แม่ควรทำยังไง?
+ที่โรงเรียนครูชมว่าเรียบร้อย... แต่กลับถึงบ้านลูกหงุดหงิดใส่แม่ทุกวัน?
 
 **คำคม (0:03 ถึง 0:09)**
-"ลูกไม่ได้ดื้อใส่เรา ลูกกำลังล้นจนรับไม่ไหว และเขาต้องยืมใจที่สงบของเราไปก่อน"
+"ลูกไม่ได้ดื้อใส่แม่ ลูกแค่เก็บมาทั้งวัน และเลือกปล่อยกับคนที่เขาไว้ใจที่สุด"
 
 **คำอธิบาย (0:09 ถึง 0:23)**
-สมองส่วนที่ช่วยคุมอารมณ์ของเด็กเล็กยังพัฒนาไม่เต็มที่ ตอนอาละวาด ลูกไม่ได้เลือกจะทำให้เราอาย แต่ระบบในตัวเขากำลังล้น สิ่งที่ช่วยได้ไม่ใช่การดุให้หยุด แต่คือการที่แม่สงบก่อน ย่อตัวลง พูดช้า ๆ ว่า "แม่อยู่ตรงนี้นะ" เมื่อลูกสงบแล้วค่อยคุยเรื่องกติกา
+ตลอดวันที่โรงเรียน ลูกต้องตั้งใจเรียน ทำตามกฎ และอดทนกับเพื่อน พอกลับถึงบ้าน แรงที่ใช้คุมตัวเองก็หมด อารมณ์เลยล้นออกมาใส่แม่ นี่ไม่ใช่การไม่เคารพ แต่เป็นสัญญาณว่าบ้านคือที่ปลอดภัย แม่ช่วยได้ด้วยการให้ลูกได้กินของว่าง พักเงียบ ๆ สัก 20 นาทีก่อนถามเรื่องการบ้าน แล้วค่อยคุยเมื่อลูกสงบ
 
 **สรุป (0:23 ถึง 0:27)**
-สงบก่อน แล้วค่อยสอน
+เติมใจก่อน แล้วค่อยถามเรื่องการบ้าน
 
 **CTA (0:27 ถึง 0:30)**
-เคยเจอแบบนี้ไหมคะ? คอมเมนต์เล่าให้ฟังหน่อย แล้วกดติดตามไว้ ตอนหน้ามีวิธีพูดให้ลูกสงบ
+ลูกบ้านไหนเป็นแบบนี้บ้างคะ? เล่าให้ฟังในคอมเมนต์ แล้วกดติดตามไว้ ไม่อยากพลาดเรื่องราวใหม่ๆ ใช่ไหมคะ
 
 **แคปชันและแฮชแท็ก**
-ลูกอาละวาดไม่ใช่เพราะดื้อ แต่เพราะใจยังเล็กเกินจะรับไหว 💛 #จิตวิทยาเด็ก #เลี้ยงลูกเชิงบวก #ลูกอาละวาด #แม่และเด็ก #คำคมจิตวิทยา
+ลูกหงุดหงิดหลังเลิกเรียน ไม่ใช่เพราะดื้อ แต่เพราะใจล้นมาทั้งวัน 💛 #ลูกวัยเรียน #จิตวิทยาเด็ก #แม่วัยทอง #เลี้ยงลูกเชิงบวก #คำคมจิตวิทยา
 
 **Prompt ภาพนิ่ง (ChatGPT)**
 ```
-Vertical 9:16 photo-realistic image. A calm Thai mother kneeling down at eye level with her crying 4-year-old child in a softly blurred shopping mall, her hand gently on the child's back. Warm golden lighting, soft pastel tones, gentle and empathetic mood, shallow depth of field, cinematic. Leave the upper third with soft empty space for text. No text, no letters, no logos in the image.
+Vertical 9:16 photo-realistic image. A warm Thai mother in her mid-40s sitting at a kitchen table after school, offering a plate of sliced fruit to her tired 9-year-old son in school uniform who rests his head on his arms, his school bag dropped on the floor. Soft late-afternoon golden light, cream and rose tones, calm and caring mood, shallow depth of field. Leave the upper third with soft empty space for text. No text, no letters, no logos in the image.
 ```
 
 **Prompt วิดีโอ (Flow)**
 ```
-Scene 1 (8s): Vertical 9:16. A Thai toddler crying and sitting on the floor of a bright shopping mall, slow push-in camera, shoppers blurred in the background, emotional but not dramatic, warm natural light.
-Scene 2 (8s): The mother takes a slow breath, kneels down to the child's eye level and speaks softly, close-up on her calm face, soft warm lighting.
-Scene 3 (8s): The child slowly stops crying and leans into the mother's hug, camera gently pulls back, warm golden tones, peaceful mood.
-Style: cinematic, soft focus, warm pastel color grade. No text on screen.
+Scene 1 (8s): Vertical 9:16. A Thai 9-year-old boy in school uniform walks into his home, drops his bag loudly and snaps at his mother with a frustrated face, late afternoon light, handheld camera.
+Scene 2 (8s): The mother in her mid-40s takes a slow breath, says nothing, and quietly places a glass of milk and a snack in front of him, close-up on her calm face, warm golden light.
+Scene 3 (8s): Twenty minutes later, the boy sits beside his mother on the sofa and starts telling her about his day, both relaxed, camera gently pulls back.
+Style: cinematic, warm cream and rose color grade. No text on screen.
 ```
 
 **เทมเพลต CapCut**
 
 | ฉาก | เวลา | ภาพ | ข้อความบนจอ |
 |---|---|---|---|
-| 1 | 0:00 ถึง 0:03 | Flow ฉาก 1 | ลูกอาละวาดกลางห้าง แม่ควรทำยังไง? |
-| 2 | 0:03 ถึง 0:09 | ภาพนิ่ง ChatGPT ซูมช้า | ลูกไม่ได้ดื้อ ลูกกำลัง**ล้น** |
-| 3 | 0:09 ถึง 0:16 | Flow ฉาก 2 | สมองส่วนคุมอารมณ์ของเด็กยังโตไม่เต็มที่ |
-| 4 | 0:16 ถึง 0:23 | Flow ฉาก 3 | ย่อตัวลง พูดช้า ๆ "แม่อยู่ตรงนี้นะ" |
-| 5 | 0:23 ถึง 0:27 | ภาพนิ่งเบลอ | **สงบก่อน** แล้วค่อยสอน |
-| 6 | 0:27 ถึง 0:30 | พื้นสีแบรนด์ | เคยเจอไหม? เล่าในคอมเมนต์ 💬 |
+| 1 | 0:00 ถึง 0:03 | Flow ฉาก 1 | ที่โรงเรียนเรียบร้อย กลับบ้านหงุดหงิดใส่แม่? |
+| 2 | 0:03 ถึง 0:09 | ภาพนิ่ง ChatGPT ซูมช้า | ลูกไม่ได้ดื้อ ลูก**เก็บมาทั้งวัน** |
+| 3 | 0:09 ถึง 0:16 | Flow ฉาก 2 | บ้านคือที่ที่ลูก**ปลอดภัย**พอจะปล่อย |
+| 4 | 0:16 ถึง 0:23 | Flow ฉาก 3 | ของว่าง + พักเงียบ 20 นาที ก่อนถามการบ้าน |
+| 5 | 0:23 ถึง 0:27 | ภาพนิ่งเบลอ | **เติมใจก่อน** แล้วค่อยถามเรื่องการบ้าน |
+| 6 | 0:27 ถึง 0:30 | พื้นสีแบรนด์ | ลูกบ้านไหนเป็นบ้าง? เล่าในคอมเมนต์ 💬 |
 
 ---
 
@@ -366,53 +366,53 @@ Style: cinematic, warm hopeful tones. No text on screen.
 
 ---
 
-## ตอนที่ 8: ซึมเศร้าหลังคลอด ไม่ใช่ความอ่อนแอ
+## ตอนที่ 8: อารมณ์แม่วัยทอง ไม่ใช่ความอ่อนแอ
 
-**กลุ่มเป้าหมาย:** แม่หลังคลอดและคนในครอบครัว
-**แนวคิด:** Postpartum depression ภาวะที่พบได้บ่อย รักษาได้ และไม่ใช่ความผิดของแม่
+**กลุ่มเป้าหมาย:** แม่วัย 40+ และคนในครอบครัว
+**แนวคิด:** Perimenopause and mood ช่วงก่อนและระหว่างวัยหมดประจำเดือน ฮอร์โมนที่เปลี่ยนส่งผลต่ออารมณ์ การนอน และความเครียด ซึ่งดูแลได้
 
 **Hook**
-มีลูกแล้วควรมีความสุข... แต่ทำไมใจถึงว่างเปล่า?
+ช่วงนี้หงุดหงิดง่าย ร้องไห้ง่าย จนไม่รู้จักตัวเอง... แม่เป็นแบบนี้ไหม?
 
 **คำคม**
-"การที่แม่ไม่ไหว ไม่ได้แปลว่าแม่ไม่รักลูก มันแปลว่าแม่ก็ต้องการคนดูแลเหมือนกัน"
+"แม่ไม่ได้เปลี่ยนเป็นคนใจร้าย ร่างกายแม่กำลังเปลี่ยน และแม่ก็ต้องการความเข้าใจเหมือนกัน"
 
 **คำอธิบาย**
-อาการเศร้า ร้องไห้ง่ายในช่วงสองสัปดาห์แรกหลังคลอดพบได้บ่อย แต่ถ้าความเศร้า ความรู้สึกผิด นอนไม่หลับ หรือไม่อยากผูกพันกับลูก อยู่นานเกินสองสัปดาห์ อาจเป็นภาวะซึมเศร้าหลังคลอด ซึ่งเป็นภาวะทางการแพทย์ที่รักษาได้ ไม่ใช่ความอ่อนแอ คนในบ้านช่วยได้ด้วยการรับฟังโดยไม่ตัดสิน และพาไปพบแพทย์หรือนักจิตวิทยา
+ในช่วงวัยทอง ฮอร์โมนเอสโตรเจนที่ขึ้นลงส่งผลต่ออารมณ์ การนอน และความอดทน หลายคนจึงหงุดหงิดง่ายขึ้นทั้งที่ไม่ได้ตั้งใจ นี่ไม่ใช่ความอ่อนแอ ลองบอกลูกตรง ๆ ว่า "ช่วงนี้แม่เหนื่อยง่าย ถ้าแม่เสียงดัง ไม่ใช่เพราะหนูนะ" ดูแลการนอน ออกกำลังกาย และปรึกษาแพทย์ได้ ถ้าเศร้าหรือหมดแรงนานเกินสองสัปดาห์ ควรพบแพทย์หรือนักจิตวิทยา
 
 **สรุป**
-ขอความช่วยเหลือ คือความกล้า
+ดูแลใจแม่ ก็คือดูแลทั้งบ้าน
 
 **CTA**
-ถ้ารู้สึกแบบนี้ คุณไม่ได้อยู่คนเดียว โทรสายด่วนสุขภาพจิต 1323 ได้ตลอด 24 ชั่วโมง และส่งคลิปนี้ให้คนที่คุณห่วงนะคะ
+ถ้ารู้สึกไม่ไหว คุณไม่ได้อยู่คนเดียวนะคะ โทรสายด่วนสุขภาพจิต 1323 ได้ตลอด 24 ชั่วโมง และส่งคลิปนี้ให้แม่วัยเดียวกันที่คุณห่วง
 
 **แคปชันและแฮชแท็ก**
-ซึมเศร้าหลังคลอดรักษาได้ และไม่ใช่ความผิดของแม่ 🤍 สายด่วนสุขภาพจิต 1323 #ซึมเศร้าหลังคลอด #สุขภาพจิตแม่ #คุณแม่หลังคลอด #PostpartumDepression #คำคมจิตวิทยา
+อารมณ์ที่แกว่งในวัยทองดูแลได้ และไม่ใช่ความผิดของแม่ 🤍 สายด่วนสุขภาพจิต 1323 #แม่วัยทอง #วัยทอง #สุขภาพจิตแม่ #แม่วัย40 #คำคมจิตวิทยา
 
-> หมายเหตุตอนนี้: เป็นหัวข้ออ่อนไหว ห้ามใช้ภาพแม่ที่ทำร้ายตัวเองหรือภาพที่น่ากลัว ใช้ภาพที่สื่อถึงการได้รับการโอบอุ้ม และใส่เบอร์ 1323 บนจอในฉาก CTA ทุกครั้ง
+> หมายเหตุตอนนี้: เป็นหัวข้อสุขภาพ ห้ามแนะนำยาหรือฮอร์โมนเอง ให้ชวนปรึกษาแพทย์ และใส่เบอร์ 1323 บนจอในฉาก CTA ทุกครั้ง
 
 **Prompt ภาพนิ่ง (ChatGPT)**
 ```
-Vertical 9:16 soft watercolor illustration. A Thai new mother sitting on a bed holding her sleeping newborn, looking tired and quietly sad, while her partner sits beside her with an arm gently around her shoulders, offering support. Soft dawn light through the window, muted lavender and cream palette, compassionate and hopeful mood, not dark or frightening. Empty space at the top. No text, no letters in the image.
+Vertical 9:16 soft watercolor illustration. A Thai woman in her late 40s sitting by a window with a cup of tea, eyes gently closed, taking a calm breath, while her 11-year-old daughter leans on her shoulder with a reassuring hug. Soft morning light, cream, rose and sage palette, compassionate and hopeful mood. Empty space at the top. No text, no letters in the image.
 ```
 
 **Prompt วิดีโอ (Flow)**
 ```
-Scene 1 (8s): Vertical 9:16. A Thai new mother sitting alone by a window at night holding her newborn, quiet and tired expression, soft blue moonlight, slow push-in, gentle not dramatic.
-Scene 2 (8s): Her partner sits beside her and holds her hand, she lets out a breath and leans on his shoulder, soft warm lamp light.
-Scene 3 (8s): Morning light, the mother talking with a kind female counselor in a bright calm room, slight smile, hopeful tone.
-Style: cinematic, gentle, moving from cool to warm color grade. No text on screen.
+Scene 1 (8s): Vertical 9:16. A Thai mother in her late 40s at home in the evening, fanning herself and sighing in frustration over a pile of school worksheets, her daughter watching quietly, soft muted light, gentle not dramatic.
+Scene 2 (8s): The mother sits down beside her daughter, holds her hand and speaks softly with an apologetic smile, warm lamp light.
+Scene 3 (8s): Morning, the mother and daughter take a slow walk together in a green neighborhood park, both smiling, camera follows from behind and slowly pulls back.
+Style: cinematic, gentle, moving from muted to warm color grade. No text on screen.
 ```
 
 **เทมเพลต CapCut**
 
 | ฉาก | เวลา | ภาพ | ข้อความบนจอ |
 |---|---|---|---|
-| 1 | 0:00 ถึง 0:03 | Flow ฉาก 1 | มีลูกแล้ว... ทำไมใจถึงว่างเปล่า? |
-| 2 | 0:03 ถึง 0:09 | ภาพนิ่ง ซูมช้า | แม่ไม่ไหว **ไม่ได้แปลว่าไม่รักลูก** |
-| 3 | 0:09 ถึง 0:16 | Flow ฉาก 2 | เศร้านานเกิน 2 สัปดาห์ อาจเป็นซึมเศร้าหลังคลอด |
-| 4 | 0:16 ถึง 0:23 | Flow ฉาก 3 | เป็นภาวะที่**รักษาได้** ไม่ใช่ความอ่อนแอ |
-| 5 | 0:23 ถึง 0:27 | ภาพนิ่งเบลอ | ขอความช่วยเหลือ คือ**ความกล้า** |
+| 1 | 0:00 ถึง 0:03 | Flow ฉาก 1 | หงุดหงิดง่าย จนไม่รู้จักตัวเอง? |
+| 2 | 0:03 ถึง 0:09 | ภาพนิ่ง ซูมช้า | แม่ไม่ได้ใจร้าย **ร่างกายแม่กำลังเปลี่ยน** |
+| 3 | 0:09 ถึง 0:16 | Flow ฉาก 2 | ฮอร์โมนวัยทองส่งผลต่ออารมณ์และการนอน |
+| 4 | 0:16 ถึง 0:23 | Flow ฉาก 3 | "ถ้าแม่เสียงดัง ไม่ใช่เพราะหนูนะ" |
+| 5 | 0:23 ถึง 0:27 | ภาพนิ่งเบลอ | ดูแลใจแม่ **ก็คือดูแลทั้งบ้าน** |
 | 6 | 0:27 ถึง 0:30 | พื้นสีแบรนด์ | สายด่วนสุขภาพจิต **1323** 24 ชม. |
 
 ---
